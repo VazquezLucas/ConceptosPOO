@@ -8,7 +8,7 @@ namespace ConceptoPOO
         static void Main(string[] args)
         {
 
-
+            realizarTarea();
 
         }
 
@@ -19,6 +19,10 @@ namespace ConceptoPOO
 
             Punto destino = new Punto(128, 80);
 
+            double distancia = origen.DistanciaHasta(destino);
+
+            Console.WriteLine($"La distancia entre los puntos es de: {distancia}");
         }
+
     }
 }
