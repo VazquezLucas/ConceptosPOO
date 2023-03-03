@@ -15,6 +15,8 @@ namespace ConceptosPOO
 
             this.y = y;
 
+            contadorDeObjetos++;
+
         }
 
         public Punto()
@@ -23,6 +25,8 @@ namespace ConceptosPOO
             this.x = 0;
 
             this.y = 0;
+
+            contadorDeObjetos++;
 
         }
 
@@ -38,7 +42,18 @@ namespace ConceptosPOO
             return distanciaPuntos;
 
         }
+        /*
+        public static int ContadorDeObjetos()
+        {
+
+            return contadorDeObjetos;
+
+        }
+        */
+        public static int ContadorDeObjetos() => contadorDeObjetos;
 
         private int x, y;
+
+        private static int contadorDeObjetos = 0;
     }
 }
