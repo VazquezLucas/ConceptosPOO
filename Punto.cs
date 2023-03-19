@@ -55,5 +55,7 @@ namespace ConceptosPOO
         private int x, y;
 
         private static int contadorDeObjetos = 0;
+
+        public const int constantePrueba = 7;
     }
 }
